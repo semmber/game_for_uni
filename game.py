@@ -51,7 +51,6 @@ def check_move():
             master.bind("<KeyPress>", do_nothing)
 
 
-
 def check_positions():
     player_coords = canvas.coords(player)
     exit_coords = canvas.coords(exit_p)
@@ -84,6 +83,7 @@ def check_positions():
             if enemy_coords == hour_coords:
                 return False
     return True
+
 
 def key_pressed(event):
     global stop_move
